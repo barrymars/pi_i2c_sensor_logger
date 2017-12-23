@@ -1,4 +1,4 @@
-package pi_i2c_senson_logger
+package main
 
 import "fmt"
 
