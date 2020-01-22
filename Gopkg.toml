@@ -40,3 +40,7 @@
 [[constraint]]
   branch = "master"
   name = "github.com/influxdata/influxdb1-client"
+
+[[constraint]]
+  name = "gobot.io/x/gobot"
+  version = "1.14.0"

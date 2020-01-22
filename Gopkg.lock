@@ -2,36 +2,36 @@
 
 
 [[projects]]
-  branch = "master"
-  digest = "1:b727c0f88e66a83ef07c66c0c069eccbd90022593e53348df1cd5355346c74c5"
-  name = "github.com/d2r2/go-bsbmp"
+  digest = "1:4b6a43ba3296f26ea01ae125e50951f141c215dd18b5b91e9f397117b2951eb1"
+  name = "github.com/gobuffalo/uuid"
   packages = ["."]
   pruneopts = "UT"
-  revision = "3b4b3aea837551362af64067fd1bea7beed4a26d"
+  revision = "3f701655805f1ef76e9963d1b377497a0c66d7cd"
+  version = "v2.0.5"
 
 [[projects]]
-  branch = "master"
-  digest = "1:7161598c406f98a315a3606acf83a40283f547056e515eb813c2ee5980ef9dcb"
-  name = "github.com/d2r2/go-i2c"
+  digest = "1:bed9d72d596f94e65fff37f4d6c01398074a6bb1c3f3ceff963516bd01db6ff5"
+  name = "github.com/gofrs/uuid"
   packages = ["."]
   pruneopts = "UT"
-  revision = "73a8a799d6bcdcb945bf5494585aff8dc44b9636"
+  revision = "6b08a5c5172ba18946672b49749cde22873dd7c2"
+  version = "v3.2.0"
 
 [[projects]]
-  branch = "master"
-  digest = "1:25157f23d71aa81cc8760fb97054a893c4014e1a1d234167b257d184191dc406"
-  name = "github.com/d2r2/go-logger"
+  digest = "1:0ade334594e69404d80d9d323445d2297ff8161637f9b2d347cc6973d2d6f05b"
+  name = "github.com/hashicorp/errwrap"
   packages = ["."]
   pruneopts = "UT"
-  revision = "9998a510495ea259b42200a610975913e4d1cacd"
+  revision = "8a6fb523712970c966eefc6b39ed2c5e74880354"
+  version = "v1.0.0"
 
 [[projects]]
-  digest = "1:ffe9824d294da03b391f44e1ae8281281b4afc1bdaa9588c9097785e3af10cec"
-  name = "github.com/davecgh/go-spew"
-  packages = ["spew"]
+  digest = "1:f668349b83f7d779567c880550534addeca7ebadfdcf44b0b9c39be61864b4b7"
+  name = "github.com/hashicorp/go-multierror"
+  packages = ["."]
   pruneopts = "UT"
-  revision = "8991bc29aa16c548c550c7ff78260e27b9ab7c73"
-  version = "v1.1.1"
+  revision = "886a7fbe3eb1c874d46f623bfa70af45f425b3d1"
+  version = "v1.0.0"
 
 [[projects]]
   branch = "master"
@@ -45,14 +45,73 @@
   pruneopts = "UT"
   revision = "8bf82d3c094dc06be9da8e5bf9d3589b6ea032ae"
 
+[[projects]]
+  digest = "1:9e1d37b58d17113ec3cb5608ac0382313c5b59470b94ed97d0976e69c7022314"
+  name = "github.com/pkg/errors"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "614d223910a179a466c1767a985424175c39b465"
+  version = "v0.9.1"
+
+[[projects]]
+  branch = "master"
+  digest = "1:fe592bd048ffa30b699fbccadade6bf60b747c7d4b888cc41fce3726af17b157"
+  name = "github.com/sigurn/crc8"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "e55481d6f45c5a8f040343bace9013571dae103e"
+
+[[projects]]
+  branch = "master"
+  digest = "1:9d28215d73b440103dc50aa3db82029a7e887c88977dfeba6c82bcf81857a0d9"
+  name = "github.com/sigurn/utils"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "e1fefb11a1443cb504cb88b973005f995b085de6"
+
+[[projects]]
+  digest = "1:15d396d292fdb016186a2cf9e772a208f4af5d87a7ac1562437fb4afe55b118a"
+  name = "gobot.io/x/gobot"
+  packages = [
+    ".",
+    "drivers/gpio",
+    "drivers/i2c",
+    "drivers/spi",
+    "platforms/raspi",
+    "sysfs",
+  ]
+  pruneopts = "UT"
+  revision = "9d38858276cfd926f78e3023e66f2dbaf98d8abe"
+  version = "v1.14.0"
+
+[[projects]]
+  digest = "1:db5e990499050c71e7420c1f736bffb0f1f495e6559848d3f365e858ccde2467"
+  name = "periph.io/x/periph"
+  packages = [
+    ".",
+    "conn",
+    "conn/gpio",
+    "conn/gpio/gpioreg",
+    "conn/i2c",
+    "conn/i2c/i2creg",
+    "conn/physic",
+    "conn/pin",
+    "conn/spi",
+    "conn/spi/spireg",
+    "host/fs",
+    "host/sysfs",
+  ]
+  pruneopts = "UT"
+  revision = "8dc522fd6d6756e1ee5f72c23f05a06a6382776c"
+  version = "v3.6.2"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/d2r2/go-bsbmp",
-    "github.com/d2r2/go-i2c",
-    "github.com/d2r2/go-logger",
     "github.com/influxdata/influxdb1-client/v2",
+    "gobot.io/x/gobot/drivers/i2c",
+    "gobot.io/x/gobot/platforms/raspi",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
