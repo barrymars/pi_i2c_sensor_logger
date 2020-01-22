@@ -25,6 +25,7 @@ func main() {
   if err != nil {
     log.Fatal(err)
   }
+  p = p / 100
   h, err := bme280.Humidity()
   if err != nil {
     log.Fatal(err)
